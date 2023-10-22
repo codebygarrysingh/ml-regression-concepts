@@ -81,6 +81,8 @@ Linear regression is the simplest form of regression, assuming a linear relation
         return scaled_x
     ```
 
+![Linear Regression Plot](plots/linear_regression_plot.png)  <!-- Insert the image here -->
+
 ## Non-Linear Regression
 
 Non-linear regression is used when the relationship between variables is not linear. This section covers:
