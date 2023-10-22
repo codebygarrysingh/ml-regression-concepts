@@ -24,15 +24,20 @@ Welcome to the Linear and Non-Linear Regression Fundamentals repository. This RE
 
 Regression analysis is a fundamental technique in machine learning and statistics used to predict a dependent variable based on one or more independent variables. It comes in two primary flavors: linear and non-linear regression. This repository covers the foundational concepts of both types of regression and includes a section on feature engineering, an important aspect of model development.
 
-## Linear Regression
+## Linear Regression - Making Predictions with Lines
 
-Linear regression is the simplest form of regression, assuming a linear relationship between the independent and dependent variables. It includes:
+Imagine you want to predict something, like how much you can sell lemonade for on a hot day. You know that on hotter days, you usually sell more lemonade, but you want to find out exactly how much more.
 
 ### Simple Linear Regression
 
-- **Overview**: In simple linear regression, there is one independent variable, and the relationship with the dependent variable is modeled using a straight line.
-- **Equation**: `y = mx + b`
-- **Derivation**: The least squares method is used to derive the coefficients `m` and `b`. For a detailed derivation, refer to [Linear Regression Derivation](https://en.wikipedia.org/wiki/Simple_linear_regression).
+- **This is like the most basic version of prediction.**
+
+- You have one piece of information (called an "independent variable") that you think is related to what you want to predict (the "dependent variable"). In this case, temperature might be the independent variable, and the amount of lemonade sold is the dependent variable.
+
+- **Equation**: To make predictions, we use an equation that looks like this:
+```Lemonade Sold (y) = Temperature (x) * Some Number (m) + Some Other Number (b)```
+
+![Linear Regression Plot](plots/linear_regression_plot.png)
 
 ### Multiple Linear Regression
 
@@ -80,9 +85,7 @@ Linear regression is the simplest form of regression, assuming a linear relation
         scaled_x = (x - mu) / sigma
         return scaled_x
     ```
-
-![Linear Regression Plot](plots/linear_regression_plot.png)  <!-- Insert the image here -->
-
+    
 ## Non-Linear Regression
 
 Non-linear regression is used when the relationship between variables is not linear. This section covers:
